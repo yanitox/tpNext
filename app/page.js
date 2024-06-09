@@ -4,7 +4,15 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-    <h1>kal</h1> 
+    <div className='titulo'>
+        <h1 className="kali">ADMINISTRADOR DE PACIENTES</h1>
+      </div>
+      <div className="kali">
+      <div className='columnaForm'>
+          <Subtitulo texto={"CREAR MI CITA"} />
+          <Formulario agregarCita={agregarCita} />
+          </div>
+      </div>
     </main>
   );
 }
